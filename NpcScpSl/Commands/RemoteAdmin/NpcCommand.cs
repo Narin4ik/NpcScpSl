@@ -25,6 +25,7 @@ namespace NpcScpSl.Commands.RemoteAdmin
         {
             RegisterCommand(new CreateCommand());
             RegisterCommand(new RemoveCommand());
+            RegisterCommand(new ExecuteCommand());
         }
 
         protected override bool ExecuteParent(ArraySegment<string> arguments, ICommandSender sender, out string response) 
